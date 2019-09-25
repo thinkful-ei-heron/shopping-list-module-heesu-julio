@@ -4,7 +4,8 @@ let items = [];
 let hideCheckedItems = false;
 
 function findById(id) {
-    return store.items.find(id)  //finds the items unique id and returns to computer
+    let foundItem = this.items.find(item => item.id === id);
+    return foundItem; //finds the items unique id and returns to computer
 }
 
 function addItem(name) {
@@ -40,6 +41,7 @@ function findAndDelete(id) {
   
 function toggleCheckedFilter() {
     this.hideCheckedItems = !this.hideCheckedItems; // toggles the checked item functon when the hide checked button is pressed, showing the user only list items which are yet to be completed
+    console.log('this is running');
 }
   
 export default {
