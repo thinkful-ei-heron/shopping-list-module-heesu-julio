@@ -7,8 +7,15 @@ const main = function () {
   shoppingList.render();
 };
 
+store.addItem('bananas');
+store.addItem('apples');
+store.addItem('rice');
+
+
 $(main);
 
 export default {
   main,
 }
+
+
