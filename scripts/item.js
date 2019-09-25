@@ -1,6 +1,6 @@
 const validateName = function(name) {
     console.log('im running')
-    if(name === undefined || name === '') {
+    if(name === '') {
         throw TypeError('Name must not be blank.');
     }
 };
